@@ -9,7 +9,9 @@ class parteCorpo {
 
 }
 
-var pickFood = document.getElementById("pickFood"); 
+var pickFood = document.getElementById("pickFood");
+var death = document.getElementById("death");
+
 
 let velocidade = 7;
 let quadrados = 20;
@@ -83,6 +85,7 @@ function isGameOver() {
         ctx.fillStyle = "white";
         ctx.font = "50px verdana";
         ctx.fillText("Fim de Jogo! ", canvas.clientWidth / 6.5, canvas.clientHeight / 2);
+        death.play();
     }
 
     return gameOver;
