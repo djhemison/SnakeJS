@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            box-shadow: black 20px 10px 50px;
+            padding: 0;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .buttonHard {
+            background-color: #f44336;
+        }
+
+        .buttonImpossivel {
+            background-color: #555555;
+        }
+
+        .buttonReset {
+            background-color: #e7e7e7;
+            color: black;
+        }
+    </style>
+    <title>Jogo da cobrinha</title>
+</head>
+
+<body>
+
+    <button class="button" onclick="easy()">Easy</button>
+    <button class="button buttonHard" onclick="hard()">Dificil</button>
+    <button class="button buttonImpossivel" onclick="impossible()">Impossivel</button>
+    <button class="button buttonReset" onclick="resetGame()">Reset</button>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
