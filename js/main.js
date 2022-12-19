@@ -31,7 +31,7 @@ let macaY = 5;
 
 let pontos = 0;
 let aceleraJogo = 10;
-let quantAcelera = 10;
+let quantAcelera = 15;
 
 function resetGame() {
     window.location = window.location.href;
@@ -176,16 +176,25 @@ document.body.addEventListener("keydown", (event) => {
 drawGame();
 
 function easy() {
-    aceleraJogo = 20;
-    quantAcelera = 20;
+    aceleraJogo = 200;
+    quantAcelera = 200;
+    alert("Dificuldade modificada para Fácil!");
+}
+
+function normal() {
+    aceleraJogo = 10;
+    quantAcelera = 15;
+    alert("Dificuldade modificada para Normal!");
 }
 
 function hard() {
     aceleraJogo = 10;
-    quantAcelera = 15;
+    quantAcelera = 10;
+    alert("Dificuldade modificada para Difícil!");
 }
 
 function impossible() {
     aceleraJogo = 5;
     quantAcelera = 1;
+    alert("Dificuldade modificada para Impossível!");
 }
