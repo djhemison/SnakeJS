@@ -140,26 +140,26 @@ function checkCollision() {
 
 
 document.body.addEventListener("keydown", (event) => {
-    if (event.key == "ArrowUp") {
+    if (event.key == "ArrowUp" || event.key == "w") {
         if (velocidadeY == 1)
             return;
         velocidadeY = -1;
         velocidadeX = 0;
 
     }
-    if (event.key == "ArrowDown") {
+    if (event.key == "ArrowDown" || event.key == "s") {
         if (velocidadeY == -1)
             return;
         velocidadeY = 1;
         velocidadeX = 0;
     }
-    if (event.key == "ArrowLeft") {
+    if (event.key == "ArrowLeft" || event.key == "a") {
         if (velocidadeX == 1)
             return;
         velocidadeY = 0;
         velocidadeX = -1;
     }
-    if (event.key == "ArrowRight") {
+    if (event.key == "ArrowRight" || event.key == "d") {
         if (velocidadeX == -1)
             return;
         velocidadeY = 0;
