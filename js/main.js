@@ -176,24 +176,40 @@ document.body.addEventListener("keydown", (event) => {
 drawGame();
 
 function easy() {
+    if(pontos> 0){
+        alert("Não é possivel mudar a dificuldade no meio do jogo!");
+        return;
+    }
     aceleraJogo = 200;
     quantAcelera = 200;
     alert("Dificuldade modificada para Fácil!");
 }
 
 function normal() {
+    if(pontos> 0){
+        alert("Não é possivel mudar a dificuldade no meio do jogo!");
+        return;
+    }
     aceleraJogo = 10;
     quantAcelera = 15;
     alert("Dificuldade modificada para Normal!");
 }
 
 function hard() {
+    if(pontos> 0){
+        alert("Não é possivel mudar a dificuldade no meio do jogo!");
+        return;
+    }
     aceleraJogo = 10;
     quantAcelera = 10;
     alert("Dificuldade modificada para Difícil!");
 }
 
 function impossible() {
+    if(pontos> 0){
+        alert("Não é possivel mudar a dificuldade no meio do jogo!");
+        return;
+    }
     aceleraJogo = 5;
     quantAcelera = 1;
     alert("Dificuldade modificada para Impossível!");
