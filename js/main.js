@@ -9,6 +9,8 @@ class parteCorpo {
 
 }
 
+var pickFood = document.getElementById("pickFood"); 
+
 let velocidade = 7;
 let quadrados = 20;
 
@@ -130,6 +132,7 @@ function checkCollision() {
         macaX = Math.floor(Math.random() * quadrados);
         macaY = Math.floor(Math.random() * quadrados);
         tamanhoCalda++;
+        pickFood.play();
         pontos++;
         if (aceleraJogo == pontos) {
             aceleraJogo += quantAcelera;

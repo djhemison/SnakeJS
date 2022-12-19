@@ -41,6 +41,10 @@
             cursor: pointer;
         }
 
+        .buttonNormal {
+            background-color: #2600ff;
+        }
+
         .buttonHard {
             background-color: #f44336;
         }
@@ -58,11 +62,17 @@
 </head>
 
 <body>
-
-    <button class="button" onclick="easy()">Easy</button>
-    <button class="button buttonHard" onclick="hard()">Dificil</button>
-    <button class="button buttonImpossivel" onclick="impossible()">Impossivel</button>
-    <button class="button buttonReset" onclick="resetGame()">Reset</button>
+    <audio id="pickFood">
+        <source src="audio/pickFood.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <button class="button" onclick="normal()">Easy</button>
+        <button class="button buttonNormal" onclick="easy()">Normal</button>
+        <button class="button buttonHard" onclick="hard()">Dificil</button>
+        <button class="button buttonImpossivel" onclick="impossible()">Impossivel</button>
+        <button class="button buttonReset" onclick="resetGame()">Reset</button>
+    </div>
     <canvas id="canvas" width="400" height="400"></canvas>
     <script src="js/main.js"></script>
 </body>
